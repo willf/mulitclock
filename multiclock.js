@@ -11,5 +11,6 @@ setInterval(function() {
     $("#acwst_time").text(local.clone().tz("Australia/Eucla").format("HH:mm"));
     $("#utc_time").text(local.clone().utc().format("HH:mm"));    
     $("#central_europe_time").text(local.clone().tz("Europe/Madrid").format("HH:mm"));
+    $("#hawaii_time").text(local.clone().tz("Pacific/Honolulu").format("HH:mm"));
     $("#epoch_time").text(local.unix());
 }, 1000);
